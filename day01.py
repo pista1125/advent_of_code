@@ -20,6 +20,7 @@ df = [x.replace(f"\n", "") for x in df]
 #1. day 1 second part
 
 old_str = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+old_str_1 = ["on", "tw", "thre", "fou", "fiv", "si", "seve", "eigh", "nin"]
 new_str = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 dt = []
@@ -43,7 +44,7 @@ for item in df:
     for h in range(len(find_num_2)):
         min_value = min(i for i in find_num if i > z)
         y = find_num.index(min_value)
-        item = item.replace(old_str[y], new_str[y])
+        item = item.replace(old_str_1[y], new_str[y])
         z = min_value
     dt.append(item)
 print(dt)
