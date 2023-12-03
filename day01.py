@@ -1,5 +1,5 @@
 
-with open("day_01.txt", mode="r", encoding='cp1250') as data:
+with open("data/day_01.txt", mode="r", encoding='cp1250') as data:
     df = data.readlines()
 
 df = [x.replace(f"\n", "") for x in df]
